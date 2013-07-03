@@ -1,0 +1,327 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title>Sistema Reporte de Incidencias</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <div>Seleccione una Linea</div>
+       <form name="form1" method="post" action="">
+	<select name="select" onchange="slctryole(this,this.form.select2)">
+		<option>- - Seleccionar - -</option>
+		<option value="Linea1">Linea 1</option>
+                <option value="Linea2">Linea 2</option>
+                <option value="Linea3">Linea 3</option>
+                <option value="Linea4">Linea 4</option>
+                <option value="Linea5">Linea 5</option>
+                <option value="Linea6">Linea 6</option>
+                <option value="Linea7">Linea 7</option>
+                <option value="Linea8">Linea 8</option>
+                <option value="Linea9">Linea 9</option>
+                <option value="Linea10">Linea A</option>
+                <option value="Linea11">Linea B</option>
+                <option value="Linea12">Linea 12</option>
+		
+	</select>
+           
+           <div>Seleccione una Estación</div>
+	<select name="select2" onchange="slctryole(this,this.form.select3)">
+		<option>- - - - - -</option>
+		<br></br>
+	
+</form>
+
+<br><textarea name="comentarios" rows="10" cols="20">Escribe aquí tus comentarios</textarea></br>
+        
+      <!--  <li><a href="#"><img src="thumbnails/australia.jpg" alt="Australia">Australia</a></li> -->
+
+    <script type="text/javascript">
+
+
+
+function slctr(texto,valor){
+	this.texto = texto;
+	this.valor = valor;
+} 
+        var Linea1=new Array();
+	Linea1[0] = new slctr('- -Estación- -');
+	Linea1[1] = new slctr("Observatorio");
+        Linea1[2] = new slctr("Tacubaya");
+        Linea1[3] = new slctr("Juanacatlán");
+        Linea1[4] = new slctr("Chapultepec");
+        Linea1[5] = new slctr("Sevilla");
+        Linea1[6] = new slctr("Insurgentes");
+        Linea1[7] = new slctr("Cuauhtémoc");
+        Linea1[8] = new slctr("Balderas");
+        Linea1[9] = new slctr("Salto del Agua");
+        Linea1[10] = new slctr("Isabel la Catolica");
+        Linea1[11] = new slctr("Pino Suárez");
+        Linea1[12] = new slctr("Merced");
+        Linea1[13] = new slctr("Candelaria");
+        Linea1[14] = new slctr("San Lazaro");
+        Linea1[15] = new slctr("Moctezuma");
+        Linea1[16] = new slctr("Balbuena");
+        Linea1[17] = new slctr("Boulevard Puerto Aéreo");
+        Linea1[18] = new slctr("Gómez Farias");
+        Linea1[19] = new slctr("Zaragoza");
+	
+        
+        var Linea2=new Array();
+	Linea2[0] = new slctr('- -Estación- -');
+	Linea2[1] = new slctr("Cuatro Caminos");
+        Linea2[2] = new slctr("Panteones");
+        Linea2[3] = new slctr("Tacuba");
+        Linea2[4] = new slctr("Cuitlahuac");
+        Linea2[5] = new slctr("Popotla");
+        Linea2[6] = new slctr("Colegio Militar");
+        Linea2[7] = new slctr("Normal");
+        Linea2[8] = new slctr("San Cosme");
+        Linea2[9] = new slctr("Revolución");
+        Linea2[10] = new slctr("Hidalgo");
+        Linea2[11] = new slctr("Bellas Artes");
+        Linea2[12] = new slctr("Allende");
+        Linea2[13] = new slctr("Zócalo");
+        Linea2[14] = new slctr("Pino Suárez");
+        Linea2[15] = new slctr("San Antonio Abad");
+        Linea2[16] = new slctr("Chabacano");
+        Linea2[17] = new slctr("Viaducto");
+        Linea2[18] = new slctr("Xola");
+        Linea2[19] = new slctr("Villa de Cortés");
+	Linea2[20] = new slctr("Nativitas");
+        Linea2[21]= new slctr("Portales");
+        Linea2[22]= new slctr("Ermita");
+        Linea2[23]= new slctr("General Anaya");
+        Linea2[24]= new slctr("Tasqueña");
+        
+        var Linea3=new Array();
+	Linea3[0] = new slctr('- -Estación- -');
+	Linea3[1] = new slctr("Indios Verdes");
+        Linea3[2] = new slctr("Deportivo 18 de Marzo");
+        Linea3[3] = new slctr("Potrero");
+        Linea3[4] = new slctr("La Raza");
+        Linea3[5] = new slctr("Tlatelolco");
+        Linea3[6] = new slctr("Guerrero");
+        Linea3[7] = new slctr("Hidalgo");
+        Linea3[8] = new slctr("Juarez");
+        Linea3[9] = new slctr("Balderas");
+        Linea3[10] = new slctr("Niños Heroes");
+        Linea3[11] = new slctr("Hospital General");
+        Linea3[12] = new slctr("Centro Médico");
+        Linea3[13] = new slctr("Etiopía/Plaza de la Transparencía");
+        Linea3[14] = new slctr("Eugenia");
+        Linea3[15] = new slctr("División del Norte");
+        Linea3[16] = new slctr("Zapata");
+        Linea3[17] = new slctr("Coyoacán");
+        Linea3[18] = new slctr("Viveros/Derechos Humanos");
+        Linea3[19] = new slctr("Miguel Angel de Quevedo");
+	Linea3[20] = new slctr("Copilco");
+        Linea3[21]= new slctr("Universidad");
+      
+       var Linea4=new Array();
+	Linea4[0] = new slctr('- -Estación- -');
+	Linea4[1] = new slctr("Martín Carrera");
+        Linea4[2] = new slctr("Talismán");
+        Linea4[3] = new slctr("Bondojito");
+        Linea4[4] = new slctr("Consulado");
+        Linea4[5] = new slctr("Canal del Norte");
+        Linea4[6] = new slctr("Morelos");
+        Linea4[7] = new slctr("Candelaria");
+        Linea4[8] = new slctr("Fray Servando");
+        Linea4[9] = new slctr("Jamaica");
+        Linea4[10] = new slctr("Santa Anita");
+       
+        var Linea5=new Array();
+	Linea5[0] = new slctr('- -Estación- -');
+	Linea5[1] = new slctr("Pantitlán");
+        Linea5[2] = new slctr("Hangares");
+        Linea5[3] = new slctr("Terminal Aérea");
+        Linea5[4] = new slctr("Oceanía");
+        Linea5[5] = new slctr("Aragón");
+        Linea5[6] = new slctr("Eduardo Molina");
+        Linea5[7] = new slctr("Consulado");
+        Linea5[8] = new slctr("Valle Gómez");
+        Linea5[9] = new slctr("Misterios");
+        Linea5[10] = new slctr("La Raza");
+        Linea5[11] = new slctr("Autobuses del Norte");
+        Linea5[12] = new slctr("Instituto del Petróleo");
+        Linea5[13] = new slctr("Politécnico");
+       
+        var Linea6=new Array();
+	Linea6[0] = new slctr('- -Estación- -');
+	Linea6[1] = new slctr("El Rosario");
+        Linea6[2] = new slctr("Tezozomoc");
+        Linea6[3] = new slctr("Azcapotzalco");
+        Linea6[4] = new slctr("Ferrería");
+        Linea6[5] = new slctr("Norte 45");
+        Linea6[6] = new slctr("Vallejo");
+        Linea6[7] = new slctr("Instituo del Petróleo");
+        Linea6[8] = new slctr("Lindavista");
+        Linea6[9] = new slctr("Deportivo 18 de Marzo");
+        Linea6[10] = new slctr("La Villa-Basílica");
+        Linea6[11] = new slctr("Martín Carrera");
+        
+        var Linea7=new Array();
+	Linea7[0] = new slctr('- -Estación- -');
+	Linea7[1] = new slctr("El Rosario");
+        Linea7[2] = new slctr("Aquiles Serdán");
+        Linea7[3] = new slctr("Camarones");
+        Linea7[4] = new slctr("Refinería");
+        Linea7[5] = new slctr("Tacuba");
+        Linea7[6] = new slctr("San Joaquín");
+        Linea7[7] = new slctr("Polanco");
+        Linea7[8] = new slctr("Auditorio");
+        Linea7[9] = new slctr("Cosntituyentes");
+        Linea7[10] = new slctr("Tacubaya");
+        Linea7[11] = new slctr("San Pedro de los Pinos");
+        Linea7[12] = new slctr("San Antonio");
+        Linea7[13] = new slctr("Mixcoac");
+        Linea7[14] = new slctr("Barranca del Muerto");
+        
+        var Linea8=new Array();
+	Linea8[0] = new slctr('- -Estación- -');
+	Linea8[1] = new slctr("Garibaldi");
+        Linea8[2] = new slctr("Bellas Artes");
+        Linea8[3] = new slctr("San Juan de Letran");
+        Linea8[4] = new slctr("Salto del Agua");
+        Linea8[5] = new slctr("Doctores");
+        Linea8[6] = new slctr("Obrera");
+        Linea8[7] = new slctr("Chabacano");
+        Linea8[8] = new slctr("La Viga");
+        Linea8[9] = new slctr("Santa Anita");
+        Linea8[10] = new slctr("Coyuya");
+        Linea8[11] = new slctr("Iztacalco");
+        Linea8[12] = new slctr("Apatlaco");
+        Linea8[13] = new slctr("Aculco");
+        Linea8[14] = new slctr("Escucadrón 201");
+        Linea8[15] = new slctr("Atlalilco");
+        Linea8[16] = new slctr("Iztapalapa");
+        Linea8[17] = new slctr("Cerro de la Estrella");
+        Linea8[18] = new slctr("UAM-I",'jardin');
+        Linea8[19] = new slctr("Constitución de 1917");
+
+     var Linea9=new Array();
+	Linea9[0] = new slctr('- -Estación- -');
+	Linea9[1] = new slctr("Tacubaya");
+        Linea9[2] = new slctr("Patriotismo");
+        Linea9[3] = new slctr("Chilpancingo");
+        Linea9[4] = new slctr("Centro Médico");
+        Linea9[5] = new slctr("Lázaro Cardenas");
+        Linea9[6] = new slctr("Chabacano");
+        Linea9[7] = new slctr("Jamaica");
+        Linea9[8] = new slctr("Mixiuhca");
+        Linea9[9] = new slctr("Velódromo");
+        Linea9[10] = new slctr("Ciudad Deportiva");
+        Linea9[11] = new slctr("Puebla");
+        Linea9[12] = new slctr("Pantitlán");
+
+var Linea10=new Array();
+	Linea10[0] = new slctr('- -Estación- -');
+	Linea10[1] = new slctr("Pantitlán");
+        Linea10[2] = new slctr("Agrícola Oriental");
+        Linea10[3] = new slctr("Canal de San Juan");
+        Linea10[4] = new slctr("Tepalcates");
+        Linea10[5] = new slctr("Guelatao");
+        Linea10[6] = new slctr("Peñon Viejo");
+        Linea10[7] = new slctr("Acatitla");
+        Linea10[8] = new slctr("Santa Marta");
+        Linea10[9] = new slctr("Los Reyes");
+        Linea10[10] = new slctr("La Paz");
+        
+        var Linea11=new Array();
+	Linea11[0] = new slctr('- -Estación- -');
+	Linea11[1] = new slctr("Ciudad Azteca");
+        Linea11[2] = new slctr("Plaza Aragón");
+        Linea11[3] = new slctr("Olímpica");
+        Linea11[4] = new slctr("Ecatepec");
+        Linea11[5] = new slctr("Muzquiz");
+        Linea11[6] = new slctr("Río de los Remedios");
+        Linea11[7] = new slctr("Impulsora");
+        Linea11[8] = new slctr("Nezahualcoyotl");
+        Linea11[9] = new slctr("Villa de Aragón");
+        Linea11[10] = new slctr("Bosque de Aragón");
+        Linea11[11] = new slctr("Deportivo Oceanía");
+        Linea11[12] = new slctr("Romero Rubio");
+        Linea11[13] = new slctr("R.Flores Magón");
+        Linea11[14] = new slctr("San Lázaro");
+        Linea11[15] = new slctr("Morelos");
+        Linea11[16] = new slctr("Tepito");
+        Linea11[17] = new slctr("Lagunilla");
+        Linea11[18] = new slctr("Garibaldi");
+        Linea11[19] = new slctr("Guerrero");
+	Linea11[20] = new slctr("Buenavista");
+        
+        var Linea12=new Array();
+	Linea12[0] = new slctr('- -Estación- -');
+	Linea12[1] = new slctr("Mixcoac");
+        Linea12[2] = new slctr("Insurgentes Sur");
+        Linea12[3] = new slctr("Hospital 20 de Noviembre");
+        Linea12[4] = new slctr("Zapata");
+        Linea12[5] = new slctr("Parque de los Venados");
+        Linea12[6] = new slctr("Eje Central");
+        Linea12[7] = new slctr("Ermita");
+        Linea12[8] = new slctr("Mexicaltzingo");
+        Linea12[9] = new slctr("Atlalilco");
+        Linea12[10] = new slctr("Culhuacán");
+        Linea12[11] = new slctr("San Adrés Tomatlán");
+        Linea12[12] = new slctr("Loma Estrella");
+        Linea12[13] = new slctr("Calle 11");
+        Linea12[14] = new slctr("Periférico Oriente");
+        Linea12[15] = new slctr("Tezonco");
+        Linea12[16] = new slctr("Olivos");
+        Linea12[17] = new slctr("Nopalera");
+        Linea12[18] = new slctr("Zapotitlán");
+        Linea12[19] = new slctr("Tlaltenco");
+	Linea12[20] = new slctr("Tláhuac");
+        
+
+//*******Nietos*******************
+/*var jardin = new Array()
+	jardin[0] = new slctr('- -Jardín- -')
+	jardin[1] = new slctr("podadora",null)
+	jardin[2] = new slctr("segadora" ,null)
+
+var fontaneria = new Array()
+	fontaneria[0] = new slctr('- -Fontanería- -')
+	fontaneria[1] = new slctr("llave inglesa",null)
+	fontaneria[2] = new slctr("llave fija",null)
+
+var salon = new Array()
+	salon[0] = new slctr('- -Salón- -')
+	salon[1] = new slctr("Mesa",null)
+	salon[2] = new slctr("silla" ,null)
+
+var dormitorio = new Array()
+	dormitorio[0] = new slctr('- -Dormitorio- -')
+	dormitorio[1] = new slctr("cama",null)
+	dormitorio[2] = new slctr("mesita" ,null)*/
+
+function slctryole(cual,donde){
+	if(cual.selectedIndex != 0){
+		donde.length=0
+		cual = eval(cual.value)
+		for(m=0;m<cual.length;m++){
+			var nuevaOpcion = new Option(cual[m].texto);
+			donde.options[m] = nuevaOpcion;
+			if(cual[m].valor != null){
+				donde.options[m].value = cual[m].valor
+			}
+			else{
+				donde.options[m].value = cual[m].texto
+			}
+		}
+	}
+}
+</script>
+
+
+        
+        
+        
+    </head>
+    <body>
+        <div></div>
+    </body>
+</html>    
